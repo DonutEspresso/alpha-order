@@ -4,7 +4,7 @@
 const assert = require('chai').assert;
 
 // internal files
-const sort = require('../lib');
+const alpha = require('../lib');
 
 
 describe('alpha-order', function() {
@@ -15,7 +15,7 @@ describe('alpha-order', function() {
             b: 2,
             a: 1
         };
-        const sorted = sort(unsorted);
+        const sorted = alpha.sort(unsorted);
 
         assert.deepEqual(sorted, unsorted);
         assert.equal(
@@ -28,7 +28,7 @@ describe('alpha-order', function() {
     it('should sort simple array', function() {
 
         const unsorted = ['c', 'b', 'a'];
-        const sorted = sort(unsorted);
+        const sorted = alpha.sort(unsorted);
 
         assert.deepEqual(sorted, ['a', 'b', 'c']);
     });
@@ -37,7 +37,7 @@ describe('alpha-order', function() {
     it('should sort nested objects in arrays', function() {
 
         const unsorted = [{ b: 2, a: 1 }, { d: 4, c: 3 }];
-        const sorted = sort(unsorted);
+        const sorted = alpha.sort(unsorted);
 
         assert.deepEqual(sorted, unsorted);
         assert.equal(
@@ -50,7 +50,7 @@ describe('alpha-order', function() {
     it('should fail to sort a Class', function() {
 
         assert.throws(function() {
-            sort(new Error('boom'));
+            alpha.sort(new Error('boom'));
         }, 'AssertionError', 'input must be plain js object or array');
     });
 
@@ -67,7 +67,7 @@ describe('alpha-order', function() {
                 bar: 2
             }
         };
-        const sorted = sort(unsorted, false);
+        const sorted = alpha.sort(unsorted, false);
 
         assert.deepEqual(sorted, unsorted);
         assert.equal(
@@ -93,7 +93,7 @@ describe('alpha-order', function() {
                 bar: 2
             }
         };
-        const sorted = sort(unsorted, true);
+        const sorted = alpha.sort(unsorted, true);
 
         assert.equal(
             JSON.stringify(sorted),
