@@ -1,12 +1,12 @@
 # alpha-order
 
 [![NPM Version](https://img.shields.io/npm/v/alpha-order.svg)](https://npmjs.org/package/alpha-order)
-[![Build Status](https://travis-ci.org//alpha-order.svg?branch=master)](https://travis-ci.org//alpha-order)
-[![Coverage Status](https://coveralls.io/repos/github//alpha-order/badge.svg?branch=master)](https://coveralls.io/github//alpha-order?branch=master)
-[![Dependency Status](https://david-dm.org//alpha-order.svg)](https://david-dm.org//alpha-order)
-[![devDependency Status](https://david-dm.org//alpha-order/dev-status.svg)](https://david-dm.org//alpha-order#info=devDependencies)
-[![bitHound Score](https://www.bithound.io/github//alpha-order/badges/score.svg)](https://www.bithound.io/github//alpha-order/master)
-[![nsp status](https://img.shields.io/badge/NSP%20status-no%20vulnerabilities-green.svg)](https://travis-ci.org//alpha-order)
+[![Build Status](https://travis-ci.org/DonutEspresso/alpha-order.svg?branch=master)](https://travis-ci.org/DonutEspresso/alpha-order)
+[![Coverage Status](https://coveralls.io/repos/github/DonutEspresso/alpha-order/badge.svg?branch=master)](https://coveralls.io/github/DonutEspresso/alpha-order?branch=master)
+[![Dependency Status](https://david-dm.org/DonutEspresso/alpha-order.svg)](https://david-dm.org/DonutEspresso/alpha-order)
+[![devDependency Status](https://david-dm.org/DonutEspresso/alpha-order/dev-status.svg)](https://david-dm.org/DonutEspresso/alpha-order#info=devDependencies)
+[![bitHound Score](https://www.bithound.io/github/DonutEspresso/alpha-order/badges/score.svg)](https://www.bithound.io/github/DonutEspresso/alpha-order/master)
+[![nsp status](https://img.shields.io/badge/NSP%20status-no%20vulnerabilities-green.svg)](https://travis-ci.org/DonutEspresso/alpha-order)
 
 > Sort JS objects and arrays by alpha order
 
