@@ -51,7 +51,7 @@ describe('alpha-order', function() {
 
         assert.throws(function() {
             alpha.sort(new Error('boom'));
-        }, 'AssertionError', 'input must be plain js object or array');
+        }, assert.AssertionError, 'input must be plain js object or array');
     });
 
 

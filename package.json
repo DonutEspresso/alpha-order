@@ -24,15 +24,13 @@
     "alpha sort"
   ],
   "devDependencies": {
-    "chai": "^3.5.0",
-    "coveralls": "^2.13.1",
-    "eslint": "^3.14.1",
-    "istanbul": "^0.4.5",
-    "jscs": "^3.0.7",
-    "mocha": "^3.2.0",
-    "nsp": "^2.6.2"
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.1",
+    "eslint": "^4.19.1",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2"
   },
   "dependencies": {
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.10"
   }
 }
