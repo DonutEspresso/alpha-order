@@ -5,8 +5,6 @@
 [![Coverage Status](https://coveralls.io/repos/github/DonutEspresso/alpha-order/badge.svg?branch=master)](https://coveralls.io/github/DonutEspresso/alpha-order?branch=master)
 [![Dependency Status](https://david-dm.org/DonutEspresso/alpha-order.svg)](https://david-dm.org/DonutEspresso/alpha-order)
 [![devDependency Status](https://david-dm.org/DonutEspresso/alpha-order/dev-status.svg)](https://david-dm.org/DonutEspresso/alpha-order#info=devDependencies)
-[![bitHound Score](https://www.bithound.io/github/DonutEspresso/alpha-order/badges/score.svg)](https://www.bithound.io/github/DonutEspresso/alpha-order/master)
-[![nsp status](https://img.shields.io/badge/NSP%20status-no%20vulnerabilities-green.svg)](https://travis-ci.org/DonutEspresso/alpha-order)
 
 > Sort JS objects and arrays by alpha order
 
@@ -72,14 +70,8 @@ Before committing, lint and test your code using the included Makefile:
 make prepush
 ```
 
-If you have style errors, you can auto fix whitespace issues by running:
-
-```sh
-make codestyle-fix
-```
-
 ## License
 
-Copyright (c) 2017 Alex Liu
+Copyright (c) 2018 Alex Liu
 
 Licensed under the MIT license.
