@@ -42,16 +42,7 @@ alpha.sort(obj, true);
 
 ## API
 
-### sort(obj, recursive)
-
-Sort an object or an array. alpha-order will only sort POJOs and arrays. It
-will not sort classes.
-
-* `obj` - {Object | Array} the object or array to be sorted
-* `recursive` - {Boolean} if true, will recursively sort nested objects
-  or arrays.
-
-__Returns__: {Object | Array} a newly sorted object or array
+See [API](/api.md)
 
 
 ## Contributing
