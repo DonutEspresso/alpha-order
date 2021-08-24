@@ -6,8 +6,8 @@ const assert = require('chai').assert;
 // internal files
 const alpha = require('../lib');
 
-describe('alpha-order', function() {
-    it('should sort simple pojo', function() {
+describe('alpha-order', function () {
+    it('should sort simple pojo', function () {
         const unsorted = {
             b: 2,
             a: 1
@@ -18,24 +18,27 @@ describe('alpha-order', function() {
         assert.equal(JSON.stringify(sorted), '{"a":1,"b":2}');
     });
 
-    it('should sort simple array', function() {
+    it('should sort simple array', function () {
         const unsorted = ['c', 'b', 'a'];
         const sorted = alpha.sort(unsorted);
 
         assert.deepEqual(sorted, ['a', 'b', 'c']);
     });
 
-    it('should sort nested objects in arrays', function() {
-        const unsorted = [{ b: 2, a: 1 }, { d: 4, c: 3 }];
+    it('should sort nested objects in arrays', function () {
+        const unsorted = [
+            { b: 2, a: 1 },
+            { d: 4, c: 3 }
+        ];
         const sorted = alpha.sort(unsorted);
 
         assert.deepEqual(sorted, unsorted);
         assert.equal(JSON.stringify(sorted), '[{"a":1,"b":2},{"c":3,"d":4}]');
     });
 
-    it('should fail to sort a Class', function() {
+    it('should fail to sort a Class', function () {
         assert.throws(
-            function() {
+            function () {
                 alpha.sort(new Error('boom'));
             },
             assert.AssertionError,
@@ -43,7 +46,7 @@ describe('alpha-order', function() {
         );
     });
 
-    it('should not sort simple pojo recursively', function() {
+    it('should not sort simple pojo recursively', function () {
         const unsorted = {
             b: ['c', 'b', 'a'],
             a: {
@@ -63,7 +66,7 @@ describe('alpha-order', function() {
         );
     });
 
-    it('should sort simple pojo recursively', function() {
+    it('should sort simple pojo recursively', function () {
         const unsorted = {
             b: ['c', 'b', 'a'],
             a: {

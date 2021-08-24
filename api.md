@@ -2,8 +2,8 @@
 
 ### Table of Contents
 
--   [sort][1]
-    -   [Parameters][2]
+*   [sort][1]
+    *   [Parameters][2]
 
 ## sort
 
@@ -11,10 +11,10 @@ sort an array or object by alpha order.
 
 ### Parameters
 
--   `obj` **([Object][3] \| [Array][4])** an object or an array
--   `recursive` **[Boolean][5]** if true, sorts all nested objs and arrays
+*   `obj` **([Object][3] | [Array][4])** an object or an array
+*   `recursive` **[Boolean][5]** if true, sorts all nested objs and arrays
 
-Returns **([Object][3] \| [Array][4])** 
+Returns **([Object][3] | [Array][4])** 
 
 [1]: #sort
 
